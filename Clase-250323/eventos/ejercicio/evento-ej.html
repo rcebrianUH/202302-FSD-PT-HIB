@@ -1,0 +1,41 @@
+{% comment %} Este código contiene tres ejercicios que utilizan diferentes tipos
+de eventos en JavaScript: un evento de ratón ('click'), un evento de teclado
+('keydown') y un evento de formulario ('submit'). Ejercicio 1: El botón "Cambiar
+color de fondo" cambia el color de fondo del cuerpo a "lightblue" cuando se hace
+clic en él. Ejercicio 2: El cuadro de texto captura las teclas que se presionan
+en el teclado y las muestra en la consola del navegador. Ejercicio 3: El
+formulario captura los valores ingresados en los campos "Nombre" y "Email"
+cuando se presiona el botón "Enviar" y los muestra en la consola del navegador.
+El método event.preventDefault() se utiliza para evitar que el formulario se
+envíe y recargue la página. {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de añadir eventos</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Ejercicios de eventos en JavaScript</h1>
+
+    <h2>Ejercicio 1: Evento de ratón</h2>
+    <p>Haz clic en el botón para cambiar el color de fondo del cuerpo:</p>
+    <button id="cambiaColor">Cambiar color de fondo</button>
+
+    <h2>Ejercicio 2: Evento de teclado</h2>
+    <p>Escribe algo en el cuadro de texto:</p>
+    <input id="miInput" type="text" />
+
+    <h2>Ejercicio 3: Evento de formulario</h2>
+    <p>Rellena el formulario y presiona el botón "Enviar":</p>
+    <form id="miForm">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text" /><br />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
