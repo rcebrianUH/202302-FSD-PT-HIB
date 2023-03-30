@@ -21,3 +21,4 @@ form.addEventListener("submit", (event) => {
   const usuario = { nombre, email };
   console.log(usuario);
 });
+
